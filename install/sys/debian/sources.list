@@ -1,0 +1,126 @@
+# 
+# deb cdrom:[Debian GNU/Linux 5.0.1 _Lenny_ - Official amd64 NETINST Binary-1 20090413-22:20]/ lenny main
+
+#deb cdrom:[Debian GNU/Linux 5.0.1 _Lenny_ - Official amd64 NETINST Binary-1 20090413-22:20]/ lenny main
+
+deb http://ftp.cz.debian.org/debian/ squeeze main contrib non-free
+deb-src http://ftp.cz.debian.org/debian/ lenny main contrib non-free
+
+deb http://security.debian.org/ squeeze/updates main
+deb-src http://security.debian.org/ squeeze/updates main
+
+deb http://volatile.debian.org/debian-volatile lenny/volatile main
+deb-src http://volatile.debian.org/debian-volatile lenny/volatile main
+
+# debian lenny backports
+deb http://www.backports.org/debian lenny-backports main contrib non-free
+deb-src http://www.backports.org/debian lenny-backports main contrib non-free
+
+# debian etch backports
+# deb http://www.backports.org/debian etch-backports main contrib non-free
+
+# KDE4
+deb http://www.debian-desktop.org/pub/linux/debian/kde42 lenny kde424
+deb-src http://www.debian-desktop.org/pub/linux/debian/kde42 lenny kde424
+
+#deb http://www.debian-desktop.org/pub/linux/debian/kde42 lenny kde42
+#deb-src http://www.debian-desktop.org/pub/linux/debian/kde42 lenny kde42
+
+# Opera stable - http://deb.opera.com
+deb http://deb.opera.com/opera/ lenny non-free
+
+# Opera beta
+#deb http://deb.opera.com/opera-beta/ lenny non-free
+
+
+# Opengroupware trunk
+#deb http://download.opengroupware.org/nightly/packages/debian etch trunk
+
+# NX Server / Client
+deb http://ppa.launchpad.net/freenx-team/ubuntu intrepid main
+deb-src http://ppa.launchpad.net/freenx-team/ubuntu intrepid main
+
+# Ubuntu - thunderbird and Firefox
+#deb http://cz.archive.ubuntu.com/ubuntu/ jaunty main restricted
+#deb-src http://cz.archive.ubuntu.com/ubuntu/ jaunty main restricted
+#deb http://www.array.org/ubuntu jaunty main
+#deb-src http://www.array.org/ubuntu jaunty main
+
+############################
+## Debian Testing/Squeeze ##
+############################
+# Testing 
+#deb http://ftp.debian.org/debian/ testing main contrib non-free
+#deb-src http://ftp.debian.org/debian/ testing main contrib non-free
+#Testing Security updates
+#deb http://security.debian.org/ testing/updates main contrib non-free
+#deb-src http://security.debian.org/ testing/updates main contrib non-free
+
+# Debian Volatile http://www.debian.org/volatile/
+#deb http://volatile.debian.org/debian-volatile squeeze/volatile main contrib non-free
+
+#KDE 4.1 debian backports squeeze
+#deb http://kde4.debian.net/ squeeze main
+
+# wicd is in testing and Sid repos http://wicd.sourceforge.net/  
+deb http://apt.wicd.net/ debian extras
+
+#######################
+## Multi-media Repos ##
+#######################
+# Marillat For info visit http://www.debian-multimedia.org
+# Unstable
+ deb http://www.debian-multimedia.org lenny main
+#deb-src http://www.debian-multimedia.org sid main
+# Experimental Staging
+# deb http://www.debian-multimedia.org experimental main 
+# Marillat Mirror
+# deb http://debian.three-dimensional.net/debian-multimedia/ unstable main 
+# deb-src http://debian.three-dimensional.net/debian-multimedia/ unstable mainn
+
+# RareWares/Debian Multi-Media Repository for Unstable
+# Info http://www.rarewares.org/debian.html
+#deb http://www.rarewares.org/debian/packages/unstable/ ./
+# RareWares/Debian Multi-Media Repository for Unstable - Experimental Staging
+#deb http://www.rarewares.org/debian/packages/experimental/ ./ 
+
+#VLC's latest packaged version is always in the official Debian unstable branch. #However you should still use our apt-get line if you need libdvdcss:
+# deb http://download.videolan.org/pub/videolan/debian sid main
+# deb-src http://download.videolan.org/pub/videolan/debian sid main 
+
+#Vlc [nightly builds], add: 
+#deb http://nightlies.videolan.org/build/sid-i386/arch ./ , to #/etc/apt/sources.list [/sid-amd64/ for 64-bit]; then: gpg --keyserver #wwwkeys.eu.pgp.net --recv-keys AA5F4DE6 && apt-key add /root/.gnupg/pubring.gpg
+
+# My Media System http://mymediasystem.org/
+# deb http://www.prodeia.de/mms/sid binary/ 
+# deb-src http://www.prodeia.de/mms source/
+
+# Tovid http://tovid.wikia.com/wiki/Installing_tovid/Debian
+# deb     http://tovid.sourceforge.net/download/debian unstable contrib
+# deb-src http://tovid.sourceforge.net/download/debian unstable contrib
+
+# Freevo
+# http://doc.freevo.org/FreevoAptDebian
+# deb http://freevo.sourceforge.net/debian unstable main
+
+# cinepaint http://www.cinepaint.org/
+# deb http://sidux.net/etorix/i386 ./ [or /amd64 for 64-bit] 
+
+#Cinerella
+# http://cinelerra.org/getting_cinelerra.php#apt
+#x86 Debian packages are built from SVN by Andraz Tori, 
+    #To install the package add this line to your sources list:
+    #For i386 processors:
+#    deb http://www.kiberpipa.org/~minmax/cinelerra/builds/sid/ ./
+    #For Pentium4 processors:
+#    deb http://www.kiberpipa.org/~minmax/cinelerra/builds/pentium4/ ./
+    #For Athlon processors:
+#    deb http://www.kiberpipa.org/~minmax/cinelerra/builds/athlonxp/ ./
+   # Apt-source:
+    #deb-src http://www.kiberpipa.org/~minmax/cinelerra/builds/sid/ ./
+    #AMD64 Debian packages are built from SVN by Valentina Messeri.
+    #To install the package add this line to your sources list:
+    #deb http://giss.tv/~vale/debian64 ./
+    #Apt-source:
+    #deb-src http://giss.tv/~vale/debian64 ./ 
+
