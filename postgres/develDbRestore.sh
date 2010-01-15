@@ -10,11 +10,4 @@ gunzip -c blog.db.devel.jyxo.com.sql.gz | psql -a blog blog
 rm blog.db.devel.jyxo.com.sql.gz
 
 
-echo 'zadejte heslo pro databazi galerie na devel.jyxo.com'
-/usr/lib/postgresql/8.4/bin/pg_dump -i --host devel.jyxo.com --port 5841 --username galerie --password -v galerie | gzip > galerie.db.devel.jyxo.com.sql.gz
 
-dropdb galerie
-createdb -O blog galerie
-gunzip -c galerie.db.devel.jyxo.com.sql.gz | psql -a galerie blog
-
-rm galerie.db.devel.jyxo.com.sql.gz
