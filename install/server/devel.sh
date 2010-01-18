@@ -1,12 +1,11 @@
-!# /bin/bash
+# /bin/bash
 aptitude install apache2 libapache2-mod-php5
 
 aptitude install php5 php5-cgi php5-cli php5-curl php5-imagick php-gettext php5-tidy php5-xcache php5-xmlrpc php5-mcrypt php5-gd
 
-aptitude install php-pear php5-dev
-
 # pro devel stroje na stable nedoporucuju
-aptitude install php5-xdebug  php5-xsl php5-dev
+aptitude install php5-xdebug  php5-xsl 
+aptitude install libtool libssl-dev shtool php5-dev php-pear
 
 aptitude install libapache2-svn
 
